@@ -15,6 +15,6 @@ app.use("/api/v1/snippet" , commentRoute )
 
 // http://localhost/api/v1/snippet/:id/comment 
 
-const PORT = 8001
+const PORT = process.env.PORT || 8001;
 
 app.listen(PORT , ()=> console.log(`server is running ON port ${PORT}`)) 
