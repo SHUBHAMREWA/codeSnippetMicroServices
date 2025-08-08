@@ -21,7 +21,7 @@ const CreateSnippet = () => {
 
          let data = await axios({
            method : "post" , 
-           url : "http://localhost:8000/api/v1/snippet" ,
+           url : "https://codesnippetmicroservices.onrender.com/api/v1/snippet" ,
            data  : { title , code }        
          })
 
@@ -34,7 +34,7 @@ const CreateSnippet = () => {
            const fetchData = async()=>{
                   let data = await axios({
                       method : "get" , 
-                     url : "http://localhost:8000/api/v1/snippet" 
+                     url : "https://codesnippetmicroservices.onrender.com/api/v1/snippet" 
                   })                
 
                   // console.log("data aai ga hai" , data.data)

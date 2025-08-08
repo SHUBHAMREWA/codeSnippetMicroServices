@@ -20,7 +20,7 @@ const Comment = ({ snippetId }) => {
 
         let data = await axios({
             method: "post",
-            url: `http://localhost:8001/api/v1/snippet/${snippetId}/comment`,
+            url: `https://codesnippetmicroservices-comments.onrender.com/api/v1/snippet/${snippetId}/comment`,
             data: { text }
 
         })
@@ -39,7 +39,7 @@ const Comment = ({ snippetId }) => {
 
             let data = await axios({
                 method: "get",
-                url: `http://localhost:8001/api/v1/snippet/${snippetId}/comment`
+                url: `https://codesnippetmicroservices-comments.onrender.com/api/v1/snippet/${snippetId}/comment`
             })
 
 
@@ -80,7 +80,7 @@ const Comment = ({ snippetId }) => {
                         className='border p-2 rounded'
                         type="text" />
 
-                    <button className='bg-emerald-500 px-2 rounded'>
+                    <button className='bg-emerald-500 px-2 rounded cursor-pointer'>
                         post
                     </button>
 
